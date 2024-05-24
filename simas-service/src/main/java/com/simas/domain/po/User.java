@@ -41,6 +41,7 @@ public class User implements Serializable {
     @TableField("email")
     private String email;
 
+    // 1 管理员 2 普通用户
     @TableField("role")
     private Integer role;
 
@@ -56,6 +57,7 @@ public class User implements Serializable {
     @TableField("views")
     private Integer views;
 
+    // 1 男 2 女
     @TableField("gender")
     private Integer gender;
 
@@ -68,12 +70,14 @@ public class User implements Serializable {
     @TableField("country")
     private String country;
 
+    // 1 正常 2 封禁
     @TableField("status")
     private Integer status;
 
     @TableField("last_login_date")
     private LocalDateTime lastLoginDate;
 
+    // 1 在线 2 离线
     @TableField("online")
     private Boolean online;
 

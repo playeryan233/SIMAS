@@ -4,7 +4,7 @@ spring:
         url: jdbc:mysql://localhost:3306/simas?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
         username: root
         password: yzc123
-mybatis:
+mybatis-plus:
     #mapper配置文件
     mapper-locations: classpath:mapper/*.xml
     type-aliases-package: com.simas.domain.po
@@ -26,3 +26,9 @@ springdoc:
         enabled: true
     api-docs:
         enabled: true
+
+simas:
+    jwt:
+        secret-key: ajdfkljaslkhdghoi465g4654s1d1g32165fsd65h436s2d1362fg1156s6165s1d56fg1
+        expiration-time: 86400000
+        refresh-expiration-time: 86400000
